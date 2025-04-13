@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="flex w-full">
+          <div class="w-1/2 p-4 border-r border-b border-[#1a1a1a]">
+            <!-- <h1 class="text-[12rem] font-bold">
+              ECİ
+            </h1> -->
+            <img src="/src/Assets/ece.svg" alt="ECİ" class="w-1/2">
+          </div>
+          <div class="flex flex-col w-1/2 border-b border-[#1a1a1a]">
+            <div class="border-b border-[#1a1a1a]">
+              <nav class="p-4">
+                <ul class="flex gap-4">
+                  <li>
+                    <a href="/about" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <div class="flex link">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          HAKKIMIZDA
+                        </span>  
+                      </div>
+                      <div class="flex link absolute">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          HAKKIMIZDA
+                        </span>  
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/work" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <div class="flex link">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          İŞLERIMIZ
+                        </span> 
+                      </div>
+                      <div class="flex link absolute">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          İŞLERIMIZ
+                        </span> 
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block" href="/contact">
+                      <div class="flex link">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          İLETİŞİM
+                        </span>
+                      </div>
+                      <div class="flex link absolute">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
+                        </span>
+                        <span>
+                          İLETİŞİM
+                        </span> 
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="text-[2rem]  p-4 flex justify-between flex-col flex-grow">
+              <div>
+                Distinctive website solutions for leading and rising companies
+              </div>
+              <div class="flex border border-[#1a1a1a] p-2 w-max rounded-[5px] gap-[6px]">
+                <div class="text-[22px]">
+                  ©2016
+                </div>
+                <div class="text-[9.75px] tracking-[-0.2px]">
+                  DAN BERİ <br>HİZMETİNİZDE
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 60vh;">
+          <canvas id="canvas3d"></canvas>
+        </div>
+        <!-- <div class="w-full p-4">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> -->
+      </section>
+      <section>
+        <div>
+          <ul class="w-full p-12 grid grid-cols-2 gap-8">
+            <li class="text-secondary p-4 rounded-[15px] border border-[#1a1a1a] customShadow">
+              <div>
+                <div class="container">
+                  <div class="img-container">
+                    <div class="img">
+                      <img width="100%" class="rounded-[15px]" src="/src/Assets/ofis-bolme-sistemleri.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h2 class="text-[2.2rem] font-bold">
+                      OFİS BÖLME SİSTEMLERİ
+                    </h2>
+                  </div>
+                  <div>
+                    <P class="text-[1.2rem]">
+                      Ofis cam bölme-Cam bölme-Jaluzili cam bölme-Tam camlı bölme-Ofis bölme cam filmi-Ofis buro bölme-Seperatör bölme-Yarı camlı panel bölme
+                    </P>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="text-secondary p-4 rounded-[15px] border border-[#1a1a1a] customShadow">
+              <div>
+                <div class="container">
+                  <div class="img-container">
+                    <div class="img">
+                      <img width="100%" class="rounded-[15px]" src="/src/Assets/ofis-bolme-sistemleri.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h2 class="text-[2.2rem] font-bold">
+                      OFİS BÖLME SİSTEMLERİ
+                    </h2>
+                  </div>
+                  <div>
+                    <P class="text-[1.2rem]">
+                      Ofis cam bölme-Cam bölme-Jaluzili cam bölme-Tam camlı bölme-Ofis bölme cam filmi-Ofis buro bölme-Seperatör bölme-Yarı camlı panel bölme
+                    </P>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

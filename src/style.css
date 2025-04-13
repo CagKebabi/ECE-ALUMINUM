@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html {
+  font-size: clamp(0.875rem, 0.8143rem + 0.1942vw, 1.125rem);
+  font-family: "Oswald", sans-serif;
+
+}
+
+@layer base {
+  :root {
+    --color-primary: #e6e8ea;    /* BEYAZ */
+    --color-secondary: #091423;  /* MAVİ */
+    --color-accent: #F59E0B;     /* TURUNCU */
+    --color-dark: #1F2937;       /* Koyu gri */
+    --color-light: #F3F4F6;      /* Açık gri */
+  }
+}
+
+@layer utilities {
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .bg-accent { background-color: var(--color-accent); }
+  .bg-dark { background-color: var(--color-dark); }
+  .bg-light { background-color: var(--color-light); }
+
+  .text-primary { color: var(--color-primary); }
+  .text-secondary { color: var(--color-secondary); }
+  .text-accent { color: var(--color-accent); }
+  .text-dark { color: var(--color-dark); }
+  .text-light { color: var(--color-light); }
+}
+
+.customShadow {
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
