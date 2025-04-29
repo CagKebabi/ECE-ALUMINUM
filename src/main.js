@@ -1,5 +1,6 @@
 import './style.css'
 import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Swiper } from "swiper";
 import "swiper/swiper-bundle.css"
 import { Application } from '@splinetool/runtime';
@@ -7,6 +8,7 @@ import { Application } from '@splinetool/runtime';
 const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
 app.load('https://prod.spline.design/KaBq5E60dB22XNwJ/scene.splinecode');
+gsap.registerPlugin(ScrollTrigger);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,7 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
+
+  //SECTION 2 HORIZONTAL ANIMATION
+  const tl = gsap.timeline();
+
+  ScrollTrigger.create({
+    trigger:"#horizontalScrollSection",
+    start:"top top",
+    end:"bottom top",
+    markers:true,
+    pin:true,
+    scrub:1,
+    animation:tl.to("#horizontalScrollSection ul .aElement", {
+      width: "22vw",
+      duration: 0.5,
+      stagger:1,
+      ease: "power3.out"
+    })
+  })
+
   //SLIDERS
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
