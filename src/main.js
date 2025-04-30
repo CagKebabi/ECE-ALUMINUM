@@ -7,7 +7,11 @@ import { Application } from '@splinetool/runtime';
 
 const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
-app.load('https://prod.spline.design/KaBq5E60dB22XNwJ/scene.splinecode');
+app.load('https://prod.spline.design/iecmiF-8dSJZ7uDN/scene.splinecode')
+.then(() => {
+  const mesh = app.findObjectByName("Group 2")
+  //mesh.position.x = 0.5
+})
 gsap.registerPlugin(ScrollTrigger);
 
 
