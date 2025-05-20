@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ScrollTrigger.create({
     trigger:"#horizontalScrollSection",
     start:"top top",
-    end:"bottom top",
+    end:"bottom+=50vh top",
     markers:true,
     pin:true,
     scrub:1,
