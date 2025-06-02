@@ -42,21 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //SECTION 2 HORIZONTAL ANIMATION
   const tl = gsap.timeline();
+  const mm = gsap.matchMedia();
 
-  ScrollTrigger.create({
-    trigger:"#horizontalScrollSection",
-    start:"top top",
-    end:"bottom+=50vh top",
-    markers:true,
-    pin:true,
-    scrub:1,
-    animation:tl.to("#horizontalScrollSection ul .aElement", {
-      width: "22vw",
-      duration: 0.5,
-      stagger:1,
-      ease: "power3.out"
+  mm.add("(min-width: 1100px)", () => {
+    ScrollTrigger.create({
+      trigger:"#horizontalScrollSection",
+      start:"top top",
+      end:"center top",
+      //markers:true,
+      pin:true,
+      //pinSpacing:false,
+      scrub:1,
+      animation:tl.to("#horizontalScrollSection ul .aElement", {
+        width: "22vw",
+        duration: 0.5,
+        stagger:1,
+        ease: "power3.out"
+      })
     })
   })
+
+ 
 
   //SLIDERS
   var swiper = new Swiper(".mySwiper", {
@@ -76,4 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 });
+
+
 
