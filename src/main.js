@@ -1,9 +1,13 @@
 import './style.css'
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Swiper } from "swiper";
+import Swiper from "swiper";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import "swiper/swiper-bundle.css"
 import { Application } from '@splinetool/runtime';
+
+// Initialize Swiper modules
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
@@ -79,6 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  // Blog Slider
+  var blogSwiper = new Swiper(".blogSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // // Adding padding to the slider
+    // centeredSlides: false,
+    // // Use CSS mode for better performance on modern browsers
+    // cssMode: true,
+    // // Improve responsiveness
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
   });
 });

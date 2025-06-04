@@ -6,8 +6,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Vite App</title>
   </head>
   <body>
@@ -243,264 +243,319 @@
         </div>
       </section>
       <section id="horizontalScrollSection">
-        <ul class="scrollElements flex lg:w-max max-lg:w-full overflow-x-hidden max-lg:flex-col">
-          <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-t border-white">
-            <div class="flex justify-between">
-              <div>
+        <!-- Horizontal Scroll Section -->
+        <section>
+          <ul class="scrollElements flex lg:w-max max-lg:w-full overflow-x-hidden max-lg:flex-col">
+            <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-t border-white">
+              <div class="flex justify-between">
                 <div>
-                  <div>DESIGN</div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
-                    </svg>
+                    <div>DESIGN</div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+                <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
+                  DES
+                </div>
               </div>
-              <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
-                DES
-              </div>
-            </div>
-            <div>
-              <p>
-                Unique, thoughtfully designed interfaces to
-                reinforce your business authority.
-              </p>
-            </div>
-          </li>
-          <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-l border-t border-white">
-            <div class="flex justify-between">
               <div>
+                <p>
+                  Unique, thoughtfully designed interfaces to
+                  reinforce your business authority.
+                </p>
+              </div>
+            </li>
+            <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-l border-t border-white">
+              <div class="flex justify-between">
                 <div>
-                  <div>DESIGN</div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
-                    </svg>
+                    <div>DESIGN</div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+                <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
+                  DES
+                </div>
               </div>
-              <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
-                DES
-              </div>
-            </div>
-            <div>
-              <p>
-                Unique, thoughtfully designed interfaces to
-                reinforce your business authority.
-              </p>
-            </div>
-          </li>
-          <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-l border-t border-white">
-            <div class="flex justify-between">
               <div>
+                <p>
+                  Unique, thoughtfully designed interfaces to
+                  reinforce your business authority.
+                </p>
+              </div>
+            </li>
+            <li class="aElement lg:w-[34vw] max-lg:w-full h-[400px] flex flex-col justify-between bg-secondary text-primary p-4 border-l border-t border-white">
+              <div class="flex justify-between">
                 <div>
-                  <div>DESIGN</div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
-                    </svg>
+                    <div>DESIGN</div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM3.56277 30.8347L9.92838 30.834C7.22999 28.1655 5.55811 24.4612 5.55811 20.3664C5.55811 16.2714 7.23015 12.567 9.92875 9.89851L3.563 9.8978C1.65906 12.9316 0.558105 16.5204 0.558105 20.3664C0.558105 24.2123 1.65897 27.801 3.56277 30.8347ZM20.2765 14.6953C17.1442 14.6953 14.605 17.2345 14.605 20.3668C14.605 23.4991 17.1442 26.0383 20.2765 26.0383C23.4088 26.0383 25.948 23.4991 25.948 20.3668C25.948 17.2345 23.4088 14.6953 20.2765 14.6953ZM9.60498 20.3668C9.60498 14.4731 14.3828 9.69531 20.2765 9.69531C26.1702 9.69531 30.948 14.4731 30.948 20.3668C30.948 26.2605 26.1702 31.0383 20.2765 31.0383C14.3828 31.0383 9.60498 26.2605 9.60498 20.3668Z" fill="#E6E8EA"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
+                  DES
+                </div>
+              </div>
+              <div>
+                <p>
+                  Unique, thoughtfully designed interfaces to
+                  reinforce your business authority.
+                </p>
+              </div>
+            </li>
+            <li class="w-[34vw] h-[400px] flex flex-col justify-between bg-secondary text-primary p-10 border-l border-t border-white">
+              <div>
+                <h4 class="text-[92px] lg:text-[7.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">İLETİŞİM</h4>
+                <div class="flex justify-end">
+                  <div>
+                    <div class="pt-8">
+                      Kes. Şekillendir. Parlat. <br>
+                      Bizimle her detayda güven var.
+                    </div>
+                    <div class="flex justify-end">
+                      <a href="tel:+905555555555">+90 555 555 55 55</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">
-                DES
-              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- INFINITE TEXT ANIMATION SECTION -->
+        <section>
+          <div class="infiniteTextContainer">
+            <div class="kayan-yazi">
+                <span class="yazi-tekrar pr-2">🔲 PVC 🔲 GİYOTİN SİSTEMLERİ 🔲 KIŞ BAHÇESİ 🔲 SÜRGÜLÜ KAPI SİSTEMLERİ 🔲 OFİS BÖLME</span>
+                <span class="yazi-tekrar">🔲 PVC 🔲 GİYOTİN SİSTEMLERİ 🔲 KIŞ BAHÇESİ 🔲 SÜRGÜLÜ KAPI SİSTEMLERİ 🔲 OFİS BÖLME</span>
             </div>
-            <div>
-              <p>
-                Unique, thoughtfully designed interfaces to
-                reinforce your business authority.
-              </p>
-            </div>
-          </li>
-          <li class="w-[34vw] h-[400px] flex flex-col justify-between bg-secondary text-primary p-10 border-l border-t border-white">
-            <div>
-              <h4 class="text-[92px] lg:text-[7.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]">İLETİŞİM</h4>
-              <div class="flex justify-end">
-                <div>
-                  <div class="pt-8">
-                    Kes. Şekillendir. Parlat. <br>
-                    Bizimle her detayda güven var.
-                  </div>
-                  <div class="flex justify-end">
-                    <a href="tel:+905555555555">+90 555 555 55 55</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <!-- <div class="w-full p-4">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="flex justify-center items-center h-full">
-                  <img src="/src/Assets/ofis-bolme-1.jpeg" alt="ECİ" class="w-1/2">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex justify-center items-center h-full">
-                  <img src="/src/Assets/kıs-bahcesi-1.jpeg" alt="ECİ" class="w-1/2">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex justify-center items-center h-full">
-                  <img src="/src/Assets/ofis-bolme-1.jpeg" alt="ECİ" class="w-1/2">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex justify-center items-center h-full">
-                  <img src="/src/Assets/kıs-bahcesi-1.jpeg" alt="ECİ" class="w-1/2">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
-        </div> -->
-        <div class="infiniteTextContainer">
-          <div class="kayan-yazi">
-              <span class="yazi-tekrar pr-2">🔲 PVC 🔲 GİYOTİN SİSTEMLERİ 🔲 KIŞ BAHÇESİ 🔲 SÜRGÜLÜ KAPI SİSTEMLERİ 🔲 OFİS BÖLME</span>
-              <span class="yazi-tekrar">🔲 PVC 🔲 GİYOTİN SİSTEMLERİ 🔲 KIŞ BAHÇESİ 🔲 SÜRGÜLÜ KAPI SİSTEMLERİ 🔲 OFİS BÖLME</span>
-          </div>
-        </div>
-        <!-- İLETİŞİM SECTION -->
-      <section id="iletisim" class="bg-primary ">
-        <div class="container mx-auto px-4 md:px-10 bg-secondary p-10 rounded-2xl">
-          <h2 class="section-title text-primary mb-10">İLETİŞİM</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-            <!-- Contact Form -->
-            <!-- <div class="bg-primary rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
-              <h3 class="text-2xl font-bold text-secondary mb-6">Bize Ulaşın</h3>
-              <form>
-                <div class="mb-4">
-                  <label for="name" class="block text-secondary font-medium mb-2">Ad Soyad</label>
-                  <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition" placeholder="Adınız Soyadınız">
-                </div>
-                <div class="mb-4">
-                  <label for="email" class="block text-secondary font-medium mb-2">E-posta</label>
-                  <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition" placeholder="ornek@email.com">
-                </div>
-                <div class="mb-4">
-                  <label for="phone" class="block text-secondary font-medium mb-2">Telefon</label>
-                  <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition" placeholder="+90 (___) ___ __ __">
-                </div>
-                <div class="mb-6">
-                  <label for="message" class="block text-secondary font-medium mb-2">Mesajınız</label>
-                  <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition" placeholder="Mesajınızı buraya yazın..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-accent hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:scale-[1.02]">
-                  Gönder
-                </button>
-              </form>
-            </div> -->
+        </section>
+        <!--BLOG SECTION-->
+        <section class="py-16 bg-primary">
+          <div class="container mx-auto">
+            <h2 class="section-title">BLOG YAZILARIMIZ</h2>
+            <p class="responsive-text-lg font-light mb-10">
+              En son haberler, projeler ve alüminyum dünyasındaki gelişmeler hakkında bilgi edinin.
+            </p>
             
-            <!-- Contact Information -->
-            <div class="flex flex-col space-y-6">
-              <!-- Map -->
-              <div class="bg-primary rounded-2xl overflow-hidden h-64 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900705384!2d28.97183661541928!3d41.0054535793012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9eb8bc188ab%3A0xe54f5378d4b1c81a!2zRW1pbsO2bsO8LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1622824050374!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
-              
-              <!-- Contact Cards -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Address -->
-                <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                  <div class="flex items-start">
-                    <div class="bg-accent rounded-full p-3 mr-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
+            <!-- Swiper Container -->
+            <div class="swiper blogSwiper">
+                <!-- Swiper Navigation -->
+                <div class="swiper-button-next text-secondary swiperCustomButton"></div>
+                <div class="swiper-button-prev text-secondary swiperCustomButton"></div>
+
+                <div class="swiper-wrapper pt-10 pb-10">
+                  <!-- Blog Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="bg-primary rounded-xl overflow-hidden shadow-lg h-full">
+                      <div class="relative overflow-hidden h-48">
+                        <img src="/src/Assets/kıs-bahcesi-1.jpeg" alt="Kış Bahçesi Blog" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-secondary text-primary text-xs font-bold px-2 py-1 rounded">
+                          15 Mayıs 2025
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h3 class="responsive-h3 text-secondary mb-3">Modern Kış Bahçesi Tasarımları</h3>
+                        <p class="responsive-text-md font-light text-secondary mb-4">
+                          Günümüz evlerinde kış bahçeleri nasıl tasarlanıyor? En son trendler ve yenilikçi çözümler...
+                        </p>
+                        <a href="#" class="inline-block bg-secondary text-primary font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-opacity-80">
+                          Devamını Oku
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <h4 class="responsive-h3 text-secondary mb-1">Adres</h4>
-                      <p class="responsive-text-md text-gray-700">Eminönü, İstanbul, Türkiye</p>
+                  </div>
+                  
+                  <!-- Blog Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="bg-primary rounded-xl overflow-hidden shadow-lg h-full">
+                      <div class="relative overflow-hidden h-48">
+                        <img src="/src/Assets/surme-cam-sistemi-2.jpeg" alt="Sürme Cam Sistemleri Blog" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-secondary text-primary text-xs font-bold px-2 py-1 rounded">
+                          2 Haziran 2025
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h3 class="responsive-h3 text-secondary mb-3">Sürme Cam Sistemlerinin Avantajları</h3>
+                        <p class="responsive-text-md font-light text-secondary mb-4">
+                          Sürme cam sistemleri neden tercih edilmeli? Enerji tasarrufu ve estetik açıdan değerlendirme...
+                        </p>
+                        <a href="#" class="inline-block bg-secondary text-primary font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-opacity-80">
+                          Devamını Oku
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Blog Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="bg-primary rounded-xl overflow-hidden shadow-lg h-full">
+                      <div class="relative overflow-hidden h-48">
+                        <img src="/src/Assets/giyotin-cam-sistemi-2.jpeg" alt="Giyotin Cam Sistemleri Blog" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-secondary text-primary text-xs font-bold px-2 py-1 rounded">
+                          28 Mayıs 2025
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h3 class="responsive-h3 text-secondary mb-3">Giyotin Cam Sistemleri ve Kullanım Alanları</h3>
+                        <p class="responsive-text-md font-light text-secondary mb-4">
+                          Giyotin cam sistemleri hangi mekanlarda ideal? Kullanım alanları ve dikkat edilmesi gerekenler...
+                        </p>
+                        <a href="#" class="inline-block bg-secondary text-primary font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-opacity-80">
+                          Devamını Oku
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Blog Slide 4 -->
+                  <div class="swiper-slide">
+                    <div class="bg-primary rounded-xl overflow-hidden shadow-lg h-full">
+                      <div class="relative overflow-hidden h-48">
+                        <img src="/src/Assets/kis-bahcesi.png" alt="Alüminyum Doğrama Blog" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-secondary text-primary text-xs font-bold px-2 py-1 rounded">
+                          10 Haziran 2025
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h3 class="responsive-h3 text-secondary mb-3">Alüminyum Doğramanın Dayanıklılık Sırları</h3>
+                        <p class="responsive-text-md font-light text-secondary mb-4">
+                          Alüminyum doğrama neden bu kadar dayanıklı? Bakım ve uzun ömürlü kullanım için öneriler...
+                        </p>
+                        <a href="#" class="inline-block bg-secondary text-primary font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-opacity-80">
+                          Devamını Oku
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
-                <!-- Phone -->
-                <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                  <div class="flex items-start">
-                    <div class="bg-accent rounded-full p-3 mr-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT SECTION -->
+        <section id="iletisim" class="bg-primary ">
+          <div class="container mx-auto px-4 md:px-10 bg-secondary p-10 rounded-2xl">
+            <h2 class="section-title text-primary mb-10">İLETİŞİM</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+              <!-- Contact Information -->
+              <div class="flex flex-col space-y-6">
+                <!-- Map -->
+                <div class="bg-primary rounded-2xl overflow-hidden h-64 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900705384!2d28.97183661541928!3d41.0054535793012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9eb8bc188ab%3A0xe54f5378d4b1c81a!2zRW1pbsO2bsO8LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1622824050374!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Address -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <div class="flex items-start">
+                      <div class="bg-accent rounded-full p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="responsive-h3 text-secondary mb-1">Adres</h4>
+                        <p class="responsive-text-md text-gray-700">Eminönü, İstanbul, Türkiye</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 class="responsive-h3 text-secondary mb-1">Telefon</h4>
-                      <p class="responsive-text-md text-gray-700">+90 (212) 123 45 67</p>
+                  </div>
+                  
+                  <!-- Phone -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <div class="flex items-start">
+                      <div class="bg-accent rounded-full p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="responsive-h3 text-secondary mb-1">Telefon</h4>
+                        <p class="responsive-text-md text-gray-700">+90 (212) 123 45 67</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Email -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <div class="flex items-start">
+                      <div class="bg-accent rounded-full p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="responsive-h3 text-secondary mb-1">E-posta</h4>
+                        <p class="responsive-text-md text-gray-700">info@ecialuminum.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Working Hours -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <div class="flex items-start">
+                      <div class="bg-accent rounded-full p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="responsive-h3 text-secondary mb-1">Çalışma Saatleri</h4>
+                        <p class="responsive-text-md text-gray-700">Pzt - Cmt: 09:00 - 18:00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
-                <!-- Email -->
-                <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                  <div class="flex items-start">
-                    <div class="bg-accent rounded-full p-3 mr-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <!-- Social Media -->
+                <div class="bg-primary rounded-xl p-6 shadow-lg">
+                  <h4 class="responsive-h3 text-secondary mb-4">Bizi Takip Edin</h4>
+                  <div class="flex space-x-4">
+                    <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
                       </svg>
-                    </div>
-                    <div>
-                      <h4 class="responsive-h3 text-secondary mb-1">E-posta</h4>
-                      <p class="responsive-text-md text-gray-700">info@ecialuminum.com</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Working Hours -->
-                <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                  <div class="flex items-start">
-                    <div class="bg-accent rounded-full p-3 mr-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </a>
+                    <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                       </svg>
-                    </div>
-                    <div>
-                      <h4 class="responsive-h3 text-secondary mb-1">Çalışma Saatleri</h4>
-                      <p class="responsive-text-md text-gray-700">Pzt - Cmt: 09:00 - 18:00</p>
-                    </div>
+                    </a>
+                    <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                      </svg>
+                    </a>
                   </div>
-                </div>
-              </div>
-              
-              <!-- Social Media -->
-              <div class="bg-primary rounded-xl p-6 shadow-lg">
-                <h4 class="responsive-h3 text-secondary mb-4">Bizi Takip Edin</h4>
-                <div class="flex space-x-4">
-                  <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </section>
     </main>
-    
     <!-- Footer -->
     <footer class="bg-primary py-8 border-t border-gray-200">
       <div class="container mx-auto px-4 md:px-10">
@@ -545,7 +600,37 @@
         </div>
       </div>
     </footer>
-    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="w-full p-4">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center h-full">
+                  <img src="/src/Assets/ofis-bolme-1.jpeg" alt="ECİ" class="w-1/2">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center h-full">
+                  <img src="/src/Assets/kıs-bahcesi-1.jpeg" alt="ECİ" class="w-1/2">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center h-full">
+                  <img src="/src/Assets/ofis-bolme-1.jpeg" alt="ECİ" class="w-1/2">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center h-full">
+                  <img src="/src/Assets/kıs-bahcesi-1.jpeg" alt="ECİ" class="w-1/2">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> -->
