@@ -4,13 +4,15 @@ import { resolve } from 'path'
 
 export default defineConfig({
     build: {
-      outDir: '../dist',
+      outDir: './dist',
       emptyOutDir: true,
       sourcemap: true,
       assetsInlineLimit: 0, // Tüm asset'leri dışa aktar
       rollupOptions: {
           input: {
               main: resolve(__dirname, 'src/index.html'),
+              about: resolve(__dirname, 'src/pages/about.html'),
+              kisBahcesi: resolve(__dirname, 'src/pages/kis-bahcesi.html'),
           },
           output: {
               assetFileNames: (assetInfo) => {
