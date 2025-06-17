@@ -3,6 +3,12 @@ import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+    server: {
+        host: true, // Tüm IP adreslerinden erişime izin ver
+        port: 5173, // Varsayılan port
+        open: !('SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env),
+        https: false
+    },
     build: {
       outDir: './dist',
       emptyOutDir: true,
@@ -10,9 +16,10 @@ export default defineConfig({
       assetsInlineLimit: 0, // Tüm asset'leri dışa aktar
       rollupOptions: {
           input: {
-              main: resolve(__dirname, 'src/index.html'),
+              main: resolve(__dirname, 'index.html'),
               about: resolve(__dirname, 'src/pages/about.html'),
               kisBahcesi: resolve(__dirname, 'src/pages/kis-bahcesi.html'),
+              surmeCam: resolve(__dirname, 'src/pages/surme-cam-sistemleri.html'),
           },
           output: {
               assetFileNames: (assetInfo) => {
@@ -27,11 +34,6 @@ export default defineConfig({
               entryFileNames: 'js/[name]-[hash].js',
           }
       }
-  },
-  server: {
-      host: true,
-      open: !('SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env),
-      https: false
   },
   plugins: [
     tailwindcss(),
