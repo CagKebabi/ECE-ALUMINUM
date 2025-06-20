@@ -3,140 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sürme Cam Sistemleri 2025: Modern Sürgülü Cam Balkon ve Veranda Çözümleri</title>
     <link rel="stylesheet" href="/src/style.css">
-    <meta name="description" content="2025 sürme cam sistemleri, sürgülü cam balkon ve veranda çözümleri. Alüminyum sürme sistemler, montaj hizmetleri ve fiyat bilgileri. Uzman ekibimizle modern yaşam alanları oluşturun.">
-    <meta name="keywords" content="sürme cam sistemleri, sürgülü cam balkon, cam veranda sistemleri, alüminyum sürme sistemler, sürme cam sistemleri fiyatları 2025, sürgülü cam balkon nasıl yapılır, en dayanıklı sürme cam sistemleri, cam veranda sürme sistem örnekleri">
-    <meta name="author" content="[Şirket Adı]">
-    
-    <!-- Open Graph Meta Etiketleri -->
-    <meta property="og:title" content="Sürme Cam Sistemleri 2025: Modern Sürgülü Cam Balkon Çözümleri">
-    <meta property="og:description" content="Profesyonel sürme cam sistemleri, sürgülü cam balkon ve veranda çözümleri. 2025 trendleri, montaj hizmetleri ve en uygun fiyatlarla.">
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="tr_TR">
-    
-    <!-- Schema.org Yapılandırılmış Veri -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Sürme Cam Sistemleri 2025: Modern Sürgülü Cam Balkon ve Veranda Çözümleri",
-        "description": "2025 sürme cam sistemleri, sürgülü cam balkon ve veranda çözümleri hakkında kapsamlı rehber",
-        "author": {
-            "@type": "Organization",
-            "name": "[Şirket Adı]"
-        },
-        "datePublished": "2025-06-17",
-        "dateModified": "2025-06-17",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://[domain]/surme-cam-sistemleri"
-        },
-        "image": {
-            "@type": "ImageObject",
-            "url": "https://[domain]/images/surme-cam-sistemleri-2025.jpg",
-            "width": "1200",
-            "height": "630"
-        }
-    }
-    </script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <title>Document</title>
     <style>
-        .header-image {
-            width: 100%;
-            height: 300px;
-            background: url('/src/Assets/surme-cam-sistemi-1.jpeg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
+      .slider {
+        padding: 32px;
+        color: #fff;
+      }
+      .slider .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .slider__flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .slider__col {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        margin-right: 32px;
+      }
+      .slider__prev,
+      .slider__next {
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 40px;
+        border: 2px solid var(--color-accent);
+        background-color: var(--color-secondary);
+      }
+      .slider__prev:focus,
+      .slider__next:focus {
+        outline: none;
+      }
+      .slider__thumbs {
+        height: calc(70vh - 96px);
+      }
+      .slider__thumbs .slider__image {
+        transition: 0.25s;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
+      .slider__thumbs .slider__image:hover {
+        opacity: 1;
+      }
+      .slider__thumbs .swiper-slide-thumb-active .slider__image {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+      .slider__images {
+        height: 70vh ;
+      }
+      .slider__images .slider__image img {
+        transition: 3s;
+      }
+      .slider__images .slider__image:hover img {
+        transform: scale(1.1);
+      }
+      .slider__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      .slider__image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      .slider__video {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .slider__video video {
+        display: block;
+        /* width: 100%; */
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      @media (max-width: 767.98px) {
+        .slider {
+          padding: 10px;
         }
-        article h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            text-align: center;
+        .slider__flex {
+          flex-direction: column-reverse;
         }
-        article h2 {
-            font-size: 1.8em;
-            color: #34495e;
-            margin: 30px 0 15px 0;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
+        .swiper-slide {
+          height: auto !important;
+          display: flex !important;
+          align-items: center !important;
         }
-        article h3 {
-            font-size: 1.4em;
-            color: #2c3e50;
-            margin: 25px 0 10px 0;
+        .swiper-slide>div {
+          height: auto !important;
         }
-        article p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin: 15px 0;
+        .slider__col {
+          flex-direction: row;
+          align-items: center;
+          margin-right: 0;
+          margin-top: 24px;
+          width: 100%;
+          justify-content: center;
         }
-        article .intro {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border-left: 5px solid #3498db;
+        .slider__images {
+          width: 100%;
+          height: auto;
         }
-        article .highlight-box {
-            background: #e8f4f8;
-            padding: 20px 20px 20px 40px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 1px solid #3498db;
+        .slider__thumbs {
+          height: 100px;
+          width: calc(100% - 96px);
+          margin: 0 16px;
+          height: auto;
         }
-        article .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        .slider__prev,
+        .slider__next {
+          height: auto;
+          width: 32px;
+          display: none;
         }
-        article .price-table th, article .price-table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+        .slider__image img {
+          object-fit: contain;
         }
-        article .price-table th {
-            background-color: #3498db;
-            color: white;
-        }
-        article .benefits-list {
-            background: #f0f8f0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        article .cta-box {
-            background: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 30px 0;
-        }
-        article .cta-box h3 {
-            color: white;
-            margin-top: 0;
-        }
-        article strong {
-            color: #2c3e50;
-        }
-        article .meta-info {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        article ul {
-          list-style-type: disc;
-          margin-left: 20px;
-        }
-        article ul li {
-          font-size: 1.1rem;
-        }
+      }
     </style>
 </head>
 <body>
@@ -159,7 +167,7 @@
     <header>
         <div class="flex w-full bg-primary">
             <div class="p-4 border-r border-b border-[#1a1a1a]">
-              <a href="/">
+              <a href="/" class="navigation">
                   <img src="/src/Assets/ece.svg" alt="ECİ" class="w-[45px]">
               </a>
             </div>
@@ -168,7 +176,7 @@
                 <nav class="p-4">
                   <ul class="flex gap-4 align-center">
                     <li>
-                      <a href="/about" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <a href="/src/pages/about.html" class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -188,7 +196,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="/work" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <a href="/src/pages/services.html" class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -208,7 +216,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block" href="/contact">
+                      <a class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block" href="/src/pages/contact.html">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -234,161 +242,152 @@
         </div>
     </header>
     <main>
-        <article class="container mx-auto px-4 py-8">
-            <h1 class="text-white text-4xl font-bold">Modern Yaşam Alanları İçin Sürme Cam Sistemleri: 2025 Trendleri ve Çözümleri</h1>
-            <div class="flex justify-center">
-              <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam1.jpeg" alt="ofis bölme">
+        <!--SERVICE SECTION-->
+        <section class="p-10 max-lg:p-5 bg-secondary">
+            <div class="p-10 max-lg:p-5 rounded-2xl bg-primary flex justify-center gap-10 max-lg:flex-col">
+                <div class="w-[20%] max-lg:w-full">
+                    <img src="/src/Assets/giyotin-cam-sistemi-1.jpeg" alt="Sürme Cam Sistemi" class="w-full object-cover rounded-xl">
+                </div>
+                <div class="w-[80%] max-lg:w-full">
+                    <h1 class="section-title text-secondary">GİYOTİN SİSTEMLERİ</h1>
+                    <p class="responsive-text-lg font-light mb-10">
+                        Giyotin cam sistemleri, dikey yönde hareket edebilen modern tasarımıyla hem şıklık hem de işlevsellik sunar. Otomatik veya manuel kullanım seçenekleriyle donatılmış bu sistemler, özellikle kafe, restoran, teras ve balkonlarda kullanım kolaylığı sağlar. Alüminyum profiller ve temperli camlarla üretilen <strong>giyotin cam sistemleri</strong>, estetik görünümün yanı sıra güvenli ve yalıtımlı bir çözüm sunar. Mekânınıza değer katan bu özel sistemlerle hava koşullarına karşı koruma sağlarken, doğayla temasınızı da kesmeden açık alan konforunu dört mevsim yaşayın. Ücretsiz keşif ve fiyat teklifi için bizimle iletişime geçin.
+                    </p>
+                </div>
             </div>
-
-            <div class="intro mt-8">
-                <p>Sürme cam sistemleri, modern yaşam alanlarının vazgeçilmez bir parçası haline gelmiştir. Doğal ışığı maksimum düzeyde içeri alırken, dört mevsim boyunca balkon, teras veya verandanızı konforlu bir yaşam alanına dönüştürmenize olanak tanır. Estetik görünümüyle evinize değer katan bu sistemler, yaşam kalitenizi de önemli ölçüde yükseltir.</p>
-                <p>Gelişmiş ray teknolojisi ve dayanıklı alüminyum profiller sayesinde hem uzun ömürlü hem de işlevsel çözümler sunan sürme cam sistemleri, günümüz mimarisinin en çok tercih edilen dış cephe kapatma sistemlerinden biri olmuştur. Bu kapsamlı rehberde, sürme cam sistemlerinin çeşitleri, avantajları ve en yeni teknolojik çözümleri hakkında detaylı bilgi bulacaksınız.</p>
+            <div class="p-10 max-lg:p-5 rounded-2xl bg-primary flex justify-center gap-10 flex-col mt-0.5">
+              <div>
+                <h2 class="section-title text-secondary text-center">GIYOTIN SİSTEMLERİ REFERANSLARIMIZ</h2>
+              </div>
+              <section class="slider">
+                <div class="slider__flex">
+                  <div class="slider__col">
+              
+                    <div class="slider__prev">Önceki</div> <!-- Кнопка для переключения на предыдущий слайд -->
+              
+                    <div class="slider__thumbs">
+                      <div class="swiper-container"> <!-- Слайдер с превью -->
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem1.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem2.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem3.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem4.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem5.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem6.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem7.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem8.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem9.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem10.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem11.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem12.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem13.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/multimedia.png" alt="multimedia"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/multimedia.png" alt="multimedia"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/multimedia.png" alt="multimedia"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/multimedia.png" alt="multimedia"/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="slider__next">Sonraki</div> <!-- Кнопка для переключения на следующий слайд -->
+              
+                  </div>
+              
+                  <div class="slider__images">
+                    <div class="swiper-container"> <!-- Слайдер с изображениями -->
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem1.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem2.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem3.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem4.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem5.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem6.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem7.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem8.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem9.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem10.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem11.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem12.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/giyotin_sistem/giyotin-sistem13.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__video"><video src="/src/Assets/giyotin_sistem/giyotin-sistem-video1.mp4" alt="" controls></video></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__video"><video src="/src/Assets/giyotin_sistem/giyotin-sistem-video2.mp4" alt="" controls></video></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__video"><video src="/src/Assets/giyotin_sistem/giyotin-sistem-video3.mp4" alt="" controls></video></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__video"><video src="/src/Assets/giyotin_sistem/giyotin-sistem-video4.mp4" alt="" controls></video></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam2.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sürme Cam Sistemleri ile Yaşam Alanlarınızı Dönüştürün</h2>
-              <p><strong>Sürme cam sistemleri</strong>, modern mimarinin vazgeçilmez çözümleri arasında yer alır. Estetik görünüm ve işlevsellik sunarak balkon, teras ve veranda gibi alanları dört mevsim kullanıma uygun hale getirir.</p>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam3.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sürme Cam Sistemleri Nedir ve Avantajları Nelerdir?</h2>
-              <p><strong>Sürgülü cam balkon sistemleri</strong>, raylı sistemle çalışan, yerden tavana kadar uzanan cam panellerle dış etkenlerden korunma sağlar.</p>
-              <ul class="highlight-box">
-                <li>Yağmur, rüzgar, toz gibi dış etkenlere karşı koruma</li>
-                <li>Isı ve ses yalıtımı</li>
-                <li>Enerji tasarrufu</li>
-                <li>Estetik görünüm</li>
-                <li>Ekstra yaşam alanı kazandırma</li>
-                <li>Kolay temizlik ve bakım</li>
-              </ul>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam4.jpeg" alt="ofis bölme">
-              </div>
-              <h2>2025 Yılının En Trend Sürme Cam Sistemleri</h2>
-        
-              <h3>1. Isı Yalıtımlı Sürme Cam Sistemleri</h3>
-              <p>Çift cam teknolojisi ve ısı yalıtımlı alüminyum profiller sayesinde maksimum verim sağlar.</p>
-        
-              <h3>2. Motorlu Sürme Cam Sistemleri</h3>
-              <p>Uzaktan kumandalı veya akıllı sistemle çalışan çözümler, geniş açıklıklarda konfor sunar.</p>
-        
-              <h3>3. Çerçevesiz Sürme Cam Sistemleri</h3>
-              <p>Minimalist ve şeffaf tasarımlar, manzarayı kesintisiz görmenizi sağlar.</p>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam5.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sürgülü Cam Balkon Nasıl Yapılır?</h2>
-              <ol class="highlight-box">
-                <li><strong>Keşif ve Ölçülendirme:</strong> Alanın ölçümleri alınır.</li>
-                <li><strong>Projelendirme:</strong> Yapıya özel tasarım hazırlanır.</li>
-                <li><strong>Üretim:</strong> Cam ve profiller projeye göre kesilir.</li>
-                <li><strong>Montaj:</strong> Ray sistemleri ve paneller monte edilir.</li>
-                <li><strong>Kontrol ve Teslim:</strong> Kullanıcıya sorunsuz şekilde teslim edilir.</li>
-              </ol>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam6.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Cam Veranda Sistemleri ile Bahçe ve Teraslarınızı Değerlendirin</h2>
-              <p><strong>Cam veranda sürme sistemleri</strong>, dış mekanlarınızı konforlu ve şık alanlara dönüştürür. Geniş açıklıkları kapatabilir ve mevsim koşullarından bağımsız kullanım sunar.</p>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam7.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Ev Balkonuna Sürme Cam Sistemleri: Doğru Seçim Nasıl Yapılır?</h2>
-              <ul class="highlight-box">
-                <li><strong>Balkon Yapısı:</strong> Taşıyıcı sistem uygunluğu</li>
-                <li><strong>Cam Kalınlığı:</strong> Rüzgar yüküne uygunluk</li>
-                <li><strong>Profil Kalitesi:</strong> Uzun ömürlü kullanım</li>
-                <li><strong>Ray Sistemi:</strong> Sessiz ve kolay açılır kapanır yapı</li>
-                <li><strong>Aksesuar Kalitesi:</strong> Güvenlik ve kullanım konforu</li>
-                <li><strong>Montaj Kalitesi:</strong> Profesyonel işçilik</li>
-              </ul>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam8.jpeg" alt="ofis bölme">
-              </div>
-              <h2>İstanbul'da Sürme Cam Sistemleri: En İyi Firmalar ve Hizmetler</h2>
-              <p><strong>İstanbul sürme cam sistemleri</strong> konusunda geniş hizmet ağına sahip. Firma seçerken şu kriterlere dikkat edin:</p>
-              <ul class="highlight-box">
-                <li>Deneyim süresi</li>
-                <li>Referans projeler</li>
-                <li>Kullanılan malzeme kalitesi</li>
-                <li>Garanti kapsamı</li>
-                <li>Satış sonrası servis</li>
-              </ul>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam9.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sürme Cam Sistemleri Fiyatları 2025: Bütçenize Uygun Çözümler</h2>
-              <p><strong>Sürgülü cam balkon fiyatları</strong>, birçok faktöre bağlıdır. Ortalama fiyatlar şöyledir:</p>
-              <ul class="highlight-box">
-                <li><strong>Ekonomik Sınıf:</strong> 5.500 TL - 6.500 TL</li>
-                <li><strong>Orta Sınıf:</strong> 10.500 TL - 12.500 TL</li>
-                <li><strong>Premium Sınıf:</strong> 12.500 TL ve üzeri</li>
-              </ul>
-            </section>
-        
-            <section> 
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam10.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sürme Cam Sistemleri Montaj ve Servis: Uzman Ekip Farkı</h2>
-              <p>Uzman ekiplerin yaptığı montajlar sistemin ömrünü uzatır. Satış sonrası hizmetler şunlardır:</p>
-              <ul class="highlight-box">
-                <li>Periyodik bakım</li>
-                <li>Yedek parça ve cam değişimi</li>
-                <li>Ray sistemi kontrolü</li>
-                <li>Arıza giderme</li>
-              </ul>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam11.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Alüminyum Sürme Cam Balkon Fiyatı: Kalite ve Ekonomi Dengesi</h2>
-              <p>Alüminyum profillerin kalitesi, sistemin dayanıklılığını ve estetiğini doğrudan etkiler. Yüksek kaliteli sistemler uzun vadede tasarruf sağlar.</p>
-            </section>
-        
-            <section>
-              <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam12.jpeg" alt="ofis bölme">
-              </div>
-              <h2>Sonuç: Sürme Cam Sistemleri Yaptırmak İstiyorum Diyenler İçin</h2>
-              <p><strong>Sürme cam sistemleri yaptırmak istiyorum</strong> diyorsanız, şu adımları izleyerek doğru seçimi yapabilirsiniz:</p>
-              <ul class="highlight-box">
-                <li>İhtiyacınızı netleştirin</li>
-                <li>Farklı firmalardan keşif ve teklif alın</li>
-                <li>Referansları kontrol edin</li>
-                <li>Malzeme kalitesine dikkat edin</li>
-                <li>Garanti koşullarını öğrenin</li>
-                <li>Fiyat-performans karşılaştırması yapın</li>
-              </ul>
-              <p>Yaşam alanlarınıza değer katmak ve konforunuzu artırmak için şimdi harekete geçin. Daha fazla bilgi ve ücretsiz keşif hizmeti için bizimle iletişime geçebilirsiniz.</p>
-            </section>
-        </article>
+        </section>
         <!--BLOG SECTION-->
         <section class="p-16 bg-primary">
             <div class="container mx-auto">
@@ -652,7 +651,53 @@
           </div>
         </div>
     </footer>
-    <script type="module" src="/src/subPages.js"></script>
     <script type="module" src="/src/page-transition.js"></script>
+    <script type="module" src="/src/servicePages.js"></script>
+    <script>
+      // Инициализация превью слайдера
+const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
+	// задаем параметры
+	direction: 'vertical', // вертикальная прокрутка
+	slidesPerView: 3, // показывать по 3 превью
+	spaceBetween: 24, // расстояние между слайдами
+	navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', // кнопка Next
+		prevEl: '.slider__prev' // кнопка Prev
+	},
+	freeMode: true, // при перетаскивании превью ведет себя как при скролле
+	breakpoints: { // условия для разных размеров окна браузера
+		0: { // при 0px и выше
+			direction: 'horizontal', // горизонтальная прокрутка
+		},
+		768: { // при 768px и выше
+			direction: 'vertical', // вертикальная прокрутка
+		}
+	}
+});
+// Инициализация слайдера изображений
+const sliderImages = new Swiper('.slider__images .swiper-container', { // ищем слайдер превью по селектору
+	// задаем параметры
+	direction: 'vertical', // вертикальная прокрутка
+	slidesPerView: 1, // показывать по 1 изображению
+	spaceBetween: 32, // расстояние между слайдами
+	mousewheel: true, // можно прокручивать изображения колёсиком мыши
+	navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', // кнопка Next
+		prevEl: '.slider__prev' // кнопка Prev
+	},
+	grabCursor: true, // менять иконку курсора
+	thumbs: { // указываем на превью слайдер
+		swiper: sliderThumbs // указываем имя превью слайдера
+	},
+	breakpoints: { // условия для разных размеров окна браузера
+		0: { // при 0px и выше
+			direction: 'horizontal', // горизонтальная прокрутка
+		},
+		768: { // при 768px и выше
+			direction: 'vertical', // вертикальная прокрутка
+		}
+	}
+});
+    </script>
 </body>
 </html>

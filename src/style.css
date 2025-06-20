@@ -124,7 +124,9 @@ html {
         }
 
         .yazi-tekrar {
-            /*padding-right: 100px;*/ /* Yazılar arası boşluk */
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         @keyframes kayma {

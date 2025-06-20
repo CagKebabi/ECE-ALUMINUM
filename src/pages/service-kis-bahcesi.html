@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css"> -->
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
     <title>Document</title>
@@ -95,6 +94,14 @@
         .slider__flex {
           flex-direction: column-reverse;
         }
+        .swiper-slide {
+          height: auto !important;
+          display: flex !important;
+          align-items: center !important;
+        }
+        .swiper-slide>div {
+          height: auto !important;
+        }
         .slider__col {
           flex-direction: row;
           align-items: center;
@@ -145,7 +152,7 @@
     <header>
         <div class="flex w-full bg-primary">
             <div class="p-4 border-r border-b border-[#1a1a1a]">
-              <a href="/">
+              <a href="/" class="navigation">
                   <img src="/src/Assets/ece.svg" alt="ECİ" class="w-[45px]">
               </a>
             </div>
@@ -154,7 +161,7 @@
                 <nav class="p-4">
                   <ul class="flex gap-4 align-center">
                     <li>
-                      <a href="/about" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <a href="/src/pages/about.html" class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -174,7 +181,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="/work" class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
+                      <a href="/src/pages/services.html" class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -194,7 +201,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="relative header-link text-secondary font-bold text-[1rem] overflow-hidden block" href="/contact">
+                      <a class="navigation relative header-link text-secondary font-bold text-[1rem] overflow-hidden block" href="/src/pages/contact.html">
                         <div class="flex link">
                           <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#b5b5b5" d="M6.886 7.879a.75.75 0 0 1 .75-.75h8.485a.75.75 0 0 1 .75.75v8.485a.75.75 0 0 1-.75.75z"/></svg>
@@ -220,7 +227,7 @@
         </div>
     </header>
     <main>
-        <!--SERVICE HEADER-->
+        <!--SERVICE SECTION-->
         <section class="p-10 max-lg:p-5 bg-secondary">
             <div class="p-10 max-lg:p-5 rounded-2xl bg-primary flex justify-center gap-10 max-lg:flex-col">
                 <div class="w-[20%] max-lg:w-full">
@@ -247,19 +254,121 @@
                       <div class="swiper-container"> <!-- Слайдер с превью -->
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi1.jpeg" alt=""/></div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi2.jpeg" alt=""/></div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi3.jpeg" alt=""/></div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi4.jpeg" alt=""/></div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi5.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi6.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi7.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi8.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi9.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi10.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi11.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi12.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi13.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi14.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi15.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi16.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi17.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi18.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi19.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi20.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi21.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi22.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi23.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi24.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi25.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi26.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi27.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi28.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi29.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi30.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi31.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi32.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi33.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi34.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi35.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi36.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi37.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi38.jpeg" alt=""/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi39.jpeg" alt=""/></div>
                           </div>
                         </div>
                       </div>
@@ -273,19 +382,121 @@
                     <div class="swiper-container"> <!-- Слайдер с изображениями -->
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi1.jpeg" alt=""/></div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi2.jpeg" alt=""/></div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi3.jpeg" alt=""/></div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi4.jpeg" alt=""/></div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi5.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi6.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi7.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi8.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi9.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi10.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi11.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi12.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi13.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi14.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi15.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi16.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi17.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi18.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi19.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi20.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi21.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi22.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi23.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi24.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi25.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi26.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi27.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi28.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi29.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi30.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi31.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi32.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi33.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi34.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi35.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi36.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi37.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi38.jpeg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="/src/Assets/kis_bahcesi/kisbahcesi39.jpeg" alt=""/></div>
                         </div>
                       </div>
                     </div>
@@ -295,7 +506,6 @@
               </section>
             </div>
         </section>
-
         <!--BLOG SECTION-->
         <section class="p-16 bg-primary">
             <div class="container mx-auto">
