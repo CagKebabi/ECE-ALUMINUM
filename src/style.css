@@ -22,7 +22,7 @@ html {
 }
 
 .responsive-h3 {
-  font-size: clamp(1.5rem, 1.8337rem + -1.068vw, 0.125rem);
+  font-size: clamp(1.3rem, 1.8337rem + -1.068vw, 0.125rem);
   font-weight: bold;
 }
 

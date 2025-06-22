@@ -18,8 +18,16 @@ export default defineConfig({
           input: {
               main: resolve(__dirname, 'index.html'),
               about: resolve(__dirname, 'src/pages/about.html'),
+              services: resolve(__dirname, 'src/pages/services.html'),
+              contact: resolve(__dirname, 'src/pages/contact.html'),
               kisBahcesi: resolve(__dirname, 'src/pages/kis-bahcesi.html'),
               surmeCam: resolve(__dirname, 'src/pages/surme-cam-sistemleri.html'),
+              ofisBolme: resolve(__dirname, 'src/pages/ofis-bolme.html'),
+              giyotinSistemler: resolve(__dirname, 'src/pages/giyotin-sistemler.html'),
+              serviceOfisBolme: resolve(__dirname, 'src/pages/service-ofis-bolme.html'),
+              serviceGiyotinSistemler: resolve(__dirname, 'src/pages/service-giyotin-sistem.html'),
+              serviceSurmeCam: resolve(__dirname, 'src/pages/service-surme-cam.html'),
+              serviceKisBahcesi: resolve(__dirname, 'src/pages/service-kis-bahcesi.html'),
           },
           output: {
               assetFileNames: (assetInfo) => {

@@ -38,6 +38,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+    
+    // Tarayıcı geri tuşu için event listener
+    window.addEventListener('pageshow', function(event) {
+      // Sayfa önbellekten yüklendiğinde (geri tuşu kullanıldığında)
+      if (event.persisted) {
+        // Blokları görünür hale getir ve animasyonu başlat
+        gsap.set(".transition .block", { visibility: "visible", scaleY: 1 });
+        gsap.to(".transition .block", {
+          scaleY: 0,
+          duration: 1,
+          stagger: {
+            each: 0.1,
+            from: "end",
+            grid: [2, 5],
+            axis: "x"
+          },
+          ease: ease
+        });
+      }
+    });
 
     function animateTransition() {
       return new Promise((resolve) => {
@@ -49,8 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             each: 0.1,
             from: "start",
             grid: [2, 5],
-            axis: "x",
-            from: "start",
+            axis: "x"
           },
           ease: ease,
           onComplete: resolve,

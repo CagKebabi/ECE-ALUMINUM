@@ -141,6 +141,171 @@
         article ul li {
           font-size: 1.1rem;
         }
+        /*Contact Section*/
+        .contact-section {
+            /* max-width: 600px; */
+            width: 100%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title-contact {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-options {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            padding: 25px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .contact-card.phone {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .contact-card:hover::before {
+            left: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .divider {
+            text-align: center;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ddd, transparent);
+        }
+
+        .divider span {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0 20px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                /* padding: 30px 20px; */
+                /* margin: 20px; */
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .contact-content {
+                gap: 15px;
+            }
+            
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+            }
+            .contact-options {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -241,7 +406,7 @@
         <article class="container mx-auto px-4 py-8">
             <h1 class="text-white text-4xl font-bold">Modern Yaşam Alanları İçin Sürme Cam Sistemleri: 2025 Trendleri ve Çözümleri</h1>
             <div class="flex justify-center">
-              <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam1.jpeg" alt="ofis bölme">
+              <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam1.jpeg" alt="Surme Cam Sistemleri">
             </div>
 
             <div class="intro mt-8">
@@ -251,7 +416,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam2.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam2.jpeg" alt="Surme Cam Sistemleri ile Yaşam Alanlarinizi Donusturun">
               </div>
               <h2>Sürme Cam Sistemleri ile Yaşam Alanlarınızı Dönüştürün</h2>
               <p><strong>Sürme cam sistemleri</strong>, modern mimarinin vazgeçilmez çözümleri arasında yer alır. Estetik görünüm ve işlevsellik sunarak balkon, teras ve veranda gibi alanları dört mevsim kullanıma uygun hale getirir.</p>
@@ -259,7 +424,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam3.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam3.jpeg" alt="Surme Cam Sistemleri Nedir ve Avantajlari Nelerdir?">
               </div>
               <h2>Sürme Cam Sistemleri Nedir ve Avantajları Nelerdir?</h2>
               <p><strong>Sürgülü cam balkon sistemleri</strong>, raylı sistemle çalışan, yerden tavana kadar uzanan cam panellerle dış etkenlerden korunma sağlar.</p>
@@ -275,7 +440,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam4.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam4.jpeg" alt="2025 Yilinin En Trend Surme Cam Sistemleri">
               </div>
               <h2>2025 Yılının En Trend Sürme Cam Sistemleri</h2>
         
@@ -291,7 +456,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam5.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam5.jpeg" alt="Surgulu Cam Balkon nasil yapilir">
               </div>
               <h2>Sürgülü Cam Balkon Nasıl Yapılır?</h2>
               <ol class="highlight-box">
@@ -305,7 +470,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam6.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam6.jpeg" alt="Cam Veranda Sistemleri ile Bahce ve Teraslarinizi Degerlindirin">
               </div>
               <h2>Cam Veranda Sistemleri ile Bahçe ve Teraslarınızı Değerlendirin</h2>
               <p><strong>Cam veranda sürme sistemleri</strong>, dış mekanlarınızı konforlu ve şık alanlara dönüştürür. Geniş açıklıkları kapatabilir ve mevsim koşullarından bağımsız kullanım sunar.</p>
@@ -313,7 +478,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam7.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam7.jpeg" alt="Ev Balkonuna Surme Cam Sistemleri Dogru Secim Nasil Yapilir">
               </div>
               <h2>Ev Balkonuna Sürme Cam Sistemleri: Doğru Seçim Nasıl Yapılır?</h2>
               <ul class="highlight-box">
@@ -328,7 +493,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam8.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam8.jpeg" alt="Istanbul'da Sürme Cam Sistemleri En İyi Firmalar ve Hizmetler">
               </div>
               <h2>İstanbul'da Sürme Cam Sistemleri: En İyi Firmalar ve Hizmetler</h2>
               <p><strong>İstanbul sürme cam sistemleri</strong> konusunda geniş hizmet ağına sahip. Firma seçerken şu kriterlere dikkat edin:</p>
@@ -343,7 +508,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam9.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam9.jpeg" alt="Surme Cam Sistemleri Fiyatları 2025: Butcenize Uygun Cozumler">
               </div>
               <h2>Sürme Cam Sistemleri Fiyatları 2025: Bütçenize Uygun Çözümler</h2>
               <p><strong>Sürgülü cam balkon fiyatları</strong>, birçok faktöre bağlıdır. Ortalama fiyatlar şöyledir:</p>
@@ -356,7 +521,7 @@
         
             <section> 
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam10.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam10.jpeg" alt="Surme Cam Sistemleri Montaj ve Servis: Uzman Ekip Farki">
               </div>
               <h2>Sürme Cam Sistemleri Montaj ve Servis: Uzman Ekip Farkı</h2>
               <p>Uzman ekiplerin yaptığı montajlar sistemin ömrünü uzatır. Satış sonrası hizmetler şunlardır:</p>
@@ -370,7 +535,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam11.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam11.jpeg" alt="Aluminyum Surme Cam Balkon Fiyati: Kalite ve Ekonomi Dengesi">
               </div>
               <h2>Alüminyum Sürme Cam Balkon Fiyatı: Kalite ve Ekonomi Dengesi</h2>
               <p>Alüminyum profillerin kalitesi, sistemin dayanıklılığını ve estetiğini doğrudan etkiler. Yüksek kaliteli sistemler uzun vadede tasarruf sağlar.</p>
@@ -378,7 +543,7 @@
         
             <section>
               <div class="flex justify-center">
-                <img class="max-w-[750px] w-full h-auto" src="/src/Assets/surme_cam/surme-cam12.jpeg" alt="ofis bölme">
+                <img class="max-w-[750px] w-full h-auto rounded-2xl" src="/src/Assets/surme_cam/surme-cam12.jpeg" alt="Sonuc: Surme Cam Sistemleri Yaptirmak Istiyorum Diyenler Icin">
               </div>
               <h2>Sonuç: Sürme Cam Sistemleri Yaptırmak İstiyorum Diyenler İçin</h2>
               <p><strong>Sürme cam sistemleri yaptırmak istiyorum</strong> diyorsanız, şu adımları izleyerek doğru seçimi yapabilirsiniz:</p>
@@ -392,9 +557,41 @@
               </ul>
               <p>Yaşam alanlarınıza değer katmak ve konforunuzu artırmak için şimdi harekete geçin. Daha fazla bilgi ve ücretsiz keşif hizmeti için bizimle iletişime geçebilirsiniz.</p>
             </section>
+            <section>
+              <div class="contact-section">
+                <h2 class="section-title-contact">📞 İletişime Geçin</h2>
+                <p class="section-subtitle">Sürme cam sistemleri için sorularınız mı var? Hemen iletişime geçelim!</p>
+                
+                <div class="contact-options">
+                    <a href="https://wa.me/905321531518?text=Merhaba,%20sürme%20cam%20sistemi%20hakkında%20bilgi%20almak%20istiyorum." class="contact-card pulse" target="_blank" style="width: 100%;">
+                        <div class="contact-content">
+                            <div class="contact-icon">
+                                📱
+                            </div>
+                            <div class="contact-info">
+                                <h3>WhatsApp'tan Yazın</h3>
+                                <p>Hızlı cevap için WhatsApp'tan mesaj gönderin. Genellikle birkaç dakika içinde yanıtlıyoruz.</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+905321531518" class="contact-card phone" style="width: 100%;">
+                        <div class="contact-content">
+                            <div class="contact-icon">
+                                📞
+                            </div>
+                            <div class="contact-info">
+                                <h3>Hemen Arayın</h3>
+                                <p>Detaylı bilgi için direkt telefon görüşmesi yapalım.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            </section>
         </article>
         <!--BLOG SECTION-->
-        <section class="p-16 bg-primary">
+        <section class="p-16 max-lg:p-5 bg-primary">
           <div class="container mx-auto">
             <h2 class="section-title">BLOG YAZILARIMIZ</h2>
             <p class="responsive-text-lg font-light mb-10">
@@ -506,37 +703,38 @@
         </section>
         <!-- CONTACT SECTION -->
         <section id="iletisim" class="bg-primary ">
-            <div class="container mx-auto px-4 md:px-10 bg-secondary p-10 rounded-2xl">
-              <h2 class="section-title text-primary mb-10">İLETİŞİM</h2>
-              
-              <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-                <!-- Contact Information -->
-                <div class="flex flex-col space-y-6">
-                  <!-- Map -->
-                  <div class="bg-primary rounded-2xl overflow-hidden h-64 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900705384!2d28.97183661541928!3d41.0054535793012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9eb8bc188ab%3A0xe54f5378d4b1c81a!2zRW1pbsO2bsO8LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1622824050374!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  </div>
-                  
-                  <!-- Contact Cards -->
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Address -->
-                    <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                      <div class="flex items-start">
-                        <div class="bg-accent rounded-full p-3 mr-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 class="responsive-h3 text-secondary mb-1">Adres</h4>
-                          <p class="responsive-text-md text-gray-700">Eminönü, İstanbul, Türkiye</p>
-                        </div>
+          <div class="container mx-auto px-4 md:px-10 bg-secondary p-10 rounded-2xl">
+            <h2 class="section-title text-primary mb-10">İLETİŞİM</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+              <!-- Contact Information -->
+              <div class="flex flex-col space-y-6">
+                <!-- Map -->
+                <div class="bg-primary rounded-2xl overflow-hidden h-64 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900705384!2d28.97183661541928!3d41.0054535793012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9eb8bc188ab%3A0xe54f5378d4b1c81a!2zRW1pbsO2bsO8LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1622824050374!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Address -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <div class="flex items-start">
+                      <div class="bg-accent rounded-full p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="responsive-h3 text-secondary mb-1">Adres</h4>
+                        <p class="responsive-text-md text-gray-700">İstanbul, Türkiye</p>
                       </div>
                     </div>
-                    
-                    <!-- Phone -->
-                    <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                  </div>
+                  
+                  <!-- Phone -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <a href="tel:+905321531518">
                       <div class="flex items-start">
                         <div class="bg-accent rounded-full p-3 mr-4">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -545,13 +743,15 @@
                         </div>
                         <div>
                           <h4 class="responsive-h3 text-secondary mb-1">Telefon</h4>
-                          <p class="responsive-text-md text-gray-700">+90 (212) 123 45 67</p>
+                          <p class="responsive-text-md text-gray-700">+90 532 153 15 18</p>
                         </div>
                       </div>
-                    </div>
-                    
-                    <!-- Email -->
-                    <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    </a>
+                  </div>
+                  
+                  <!-- Email -->
+                  <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                    <a href="mailto:info@ecealuminyum.com">
                       <div class="flex items-start">
                         <div class="bg-accent rounded-full p-3 mr-4">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -560,101 +760,71 @@
                         </div>
                         <div>
                           <h4 class="responsive-h3 text-secondary mb-1">E-posta</h4>
-                          <p class="responsive-text-md text-gray-700">info@ecialuminum.com</p>
+                          <p class="responsive-text-md text-gray-700">info@ecealuminyum.com</p>
                         </div>
                       </div>
-                    </div>
-                    
-                    <!-- Working Hours -->
-                    <div class="bg-primary rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                      <div class="flex items-start">
-                        <div class="bg-accent rounded-full p-3 mr-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 class="responsive-h3 text-secondary mb-1">Çalışma Saatleri</h4>
-                          <p class="responsive-text-md text-gray-700">Pzt - Cmt: 09:00 - 18:00</p>
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
-                  
-                  <!-- Social Media -->
-                  <div class="bg-primary rounded-xl p-6 shadow-lg">
-                    <h4 class="responsive-h3 text-secondary mb-4">Bizi Takip Edin</h4>
-                    <div class="flex space-x-4">
-                      <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                        </svg>
-                      </a>
-                      <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                      </a>
-                      <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                        </svg>
-                      </a>
-                      <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                        </svg>
-                      </a>
-                    </div>
+                
+                <!-- Social Media -->
+                <div class="bg-primary rounded-xl p-6 shadow-lg">
+                  <h4 class="responsive-h3 text-secondary mb-4">Bizi Takip Edin</h4>
+                  <div class="flex space-x-4">
+                    <a href="#" class="bg-secondary hover:bg-accent text-white rounded-full p-3 transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </section>
     </main>
     <!-- Footer -->
     <footer class="bg-primary py-8 border-t border-gray-200">
-        <div class="container mx-auto px-4 md:px-10">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo and Copyright -->
-            <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
-              <img src="/src/Assets/ece.svg" alt="ECE Aluminum" class="h-12 mb-4">
-              <p class="responsive-text-md text-secondary">&copy; 2025 ECE Aluminum. Tüm hakları saklıdır.</p>
+      <div class="container mx-auto px-4 md:px-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <!-- Logo and Copyright -->
+          <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+            <img src="/src/Assets/ece.svg" alt="ECE Aluminum" class="h-12 mb-4">
+            <p class="responsive-text-md text-secondary">&copy; 2025 ECE Aluminyum. Tüm hakları saklıdır.</p>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="flex space-x-8">
+            <div>
+              <h5 class="responsive-h3 text-secondary mb-3">Hızlı Erişim</h5>
+              <ul class="space-y-2">
+                <li><a href="/" class="navigation responsive-text-md text-gray-600 hover:text-accent transition-colors">Ana Sayfa</a></li>
+                <li><a href="/src/pages/about.html" class="navigation responsive-text-md text-gray-600 hover:text-accent transition-colors">Hakkımızda</a></li>
+                <li><a href="/src/pages/services.html" class="navigation responsive-text-md text-gray-600 hover:text-accent transition-colors">Hizmetlerimiz</a></li>
+                <li><a href="/src/pages/contact.html" class="navigation responsive-text-md text-gray-600 hover:text-accent transition-colors">İletişim</a></li>
+              </ul>
             </div>
             
-            <!-- Quick Links -->
-            <div class="flex space-x-8">
-              <div>
-                <h5 class="responsive-h3 text-secondary mb-3">Hızlı Erişim</h5>
-                <ul class="space-y-2">
-                  <li><a href="#" class="responsive-text-md text-gray-600 hover:text-accent transition-colors">Ana Sayfa</a></li>
-                  <li><a href="#" class="responsive-text-md text-gray-600 hover:text-accent transition-colors">Hizmetlerimiz</a></li>
-                  <li><a href="#" class="responsive-text-md text-gray-600 hover:text-accent transition-colors">Projelerimiz</a></li>
-                  <li><a href="#iletisim" class="responsive-text-md text-gray-600 hover:text-accent transition-colors">İletişim</a></li>
-                </ul>
-              </div>
-              
-              <!-- Contact Info -->
-              <div>
-                <h5 class="responsive-h3 text-secondary mb-3">İletişim</h5>
-                <ul class="space-y-2">
-                  <li class="flex items-center responsive-text-md text-gray-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    +90 (212) 123 45 67
-                  </li>
-                  <li class="flex items-center responsive-text-md text-gray-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    info@ecialuminum.com
-                  </li>
-                </ul>
-              </div>
+            <!-- Contact Info -->
+            <div>
+              <h5 class="responsive-h3 text-secondary mb-3">İletişim</h5>
+              <ul class="space-y-2">
+                <li class="flex items-center responsive-text-md text-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  +90 532 153 15 18
+                </li>
+                <li class="flex items-center responsive-text-md text-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  info@ecealuminyum.com
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </footer>
     <script type="module" src="/src/subPages.js"></script>
     <script type="module" src="/src/page-transition.js"></script>
